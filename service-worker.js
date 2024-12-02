@@ -1,10 +1,10 @@
 const CACHE_NAME = 'tester-v1'; // Update this on changes
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/icon.png',
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './icon.png',
 ];
 
 // Install event: Cache files
