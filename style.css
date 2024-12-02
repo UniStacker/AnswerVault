@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #2f4f4f;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background: linear-gradient(to bottom, #3fff42, #06770a);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#question {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+#add-screen {
+  background: #555555;
+  width: 90%;
+  height: 30%;
+  position: fixed;
+  top: 10rem;
+  left: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+}
+.add-items {
+  width: 80%;
+  height: 20%;
+  border-radius: .5rem;
+  border: 2px solid darkslateblue;
+}
+#add-submit {
+    width: 30%;
+    background: #4CCF50;
+    border-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 100ms ease;
+}
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a2c2c;
+    position: fixed;
+    bottom: 0;
+}
+#stats {
+  display: flex;
+  flex-direction: column;
+}
+#answer-in {
+    height: 2.5rem;
+    width: 25rem;
+    border: 2px solid black;
+    border-right: none;
+    border-radius: .3rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#submit {
+    height: 2.85rem;
+    width: 7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: .3rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 100ms ease;
+}
+#submit:hover {
+    background-color: #45a049;
+}
+#submit:active, #add-submit:active {
+    background-color: #3e8e41;
+    font-size: .9rem;
+}
+#add-btn {
+  width: 10vw;
+  height: 10vw;
+  font-size: 1.5rem;
+  color: black;
+  border: 2px solid #00b800;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: all 80ms ease;
+}
+#add-btn:active {
+  transform: scale(.8);
+}
+.anim-class {
+    position: relative;
+    animation: character .5s ease infinite;
+}
+
+@keyframes character {
+  0% {
+      opacity: 0;
+      top: 2rem;
+}
+  100% {
+      opacity: 1;
+      top: 0;
+  }
+}
+
+#update-notification {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#update-notification button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/style.css">
+    <title>AnswerVault</title>
+</head>
+<body>
+    <header>
+        <div id="stats">
+            <div id="true">Right: &nbsp;&nbsp;<span id="right">0</span></div>
+            <div id="false">Wrong: <span id="wrong">0</span></div>
+        </div>
+        <button id="add-btn">+</button>
+    </header>
+    <div id="question">?</div>
+    <div id="add-screen">
+        <input id="add-question-in" class="add-items add-in" type="text" placeholder="Enter question...">
+        <input id="add-answer-in" class="add-items add-in" type="text" placeholder="Enter answer...">
+        <button id="add-submit" class="add-items">Submit</button>
+    </div>
+    <div id="update-notification">
+        A new version is available.
+        <button id="update-button" type="button">Update</button>
+    </div>
+    <footer>
+        <input id="answer-in" type="text" placeholder="Type answer here...">
+        <button id="submit" type="button">Submit</button>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
